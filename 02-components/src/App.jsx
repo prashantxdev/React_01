@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './components/Card'
 import Navbar from './components/Navbar'
+import { Camera, Heart, User } from "lucide-react";
 
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar />
       <Navbar />
       <Card />
+      <Heart />
     </div>
   );
 }

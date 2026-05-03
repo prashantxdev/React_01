@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+}
+
+/* Grid Layout */
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  /* fixed card width but allows multiple columns */
+
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Card */
+.card {
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Top */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.save {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  background: #ddd;
+  cursor: pointer;
+}
+
+/* Tags */
+.tags {
+  margin: 10px 0;
+}
+
+.tags span {
+  background: #ddd;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+/* Divider */
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 15px 0;
+}
+
+/* Bottom */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apply {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
